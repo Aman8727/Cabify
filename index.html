@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cabify</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+#login{margin-left: 45% ;
+       font-size: 30px ;
+       text-decoration:none;
+                    }
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+#home{
+  margin-top:0px;
+}
+.night{
+  margin left:10 px;
+  height :100vh ;
+  width :80vw ;
+  /* border :1px solid black; */
+  margin:5rem auto ;
+  background:url('https://ak.picdn.net/shutterstock/videos/1026026591/thumb/1.jpg') ;
+  background-size :cover ;
+  position :relative ;
+  box-shadow:1px 2px 60px rgba(0,0,0,0.4) ;
+  overflow-x:hidden ;
+
+}
+.surface {
+  height: 120px;
+   width: 500% ;
+   background:url('https://lh3.googleusercontent.com/proxy/dwxukK0jXmjDaZ4GOQY1cUURjFA1XZwMgxMmPWwsl4DrVX-8_yRofeHfjpufsmnwyVByNcr9brK_qCW2Av5phugb') ;
+  display :block ;
+  position:absolute ;
+  bottom : 10% ;
+  left :0 % ;
+  background-repeat:repeat-x ;
+  animation :moveright 6s linear infinite ;
+}
+.car{
+ position:absolute ;
+  bottom:6% ;
+  left:24% ;
+  animation:susp 1s linear infinite ;
+
+}
+@keyframes moveright{
+  100%{transform :translateX(-2950px)}
+}
+@keyframes susp {
+    100%{
+      transform:translateY(-1px);
+
+    }
+    50%{
+      transform:translateY(2px);
+    }
+    0%{
+      transform:translateY(-1px);
+    }
+}
+</style>
+</head>
+
+
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://media.istockphoto.com/vectors/connection-letter-c-logo-vector-design-template-vector-id1066833590?k=6&m=1066833590&s=612x612&w=0&h=041825XcFzR0m8Ekn3cEi1KJZnTlY5xU9-jg15xXJas=" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#login" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>LOGIN</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#login" class="w3-bar-item w3-button" style="width:25% !important">LOGIN</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+
+  </header>
+  <div class="night">
+    <header class="w3-container w3-padding-32 w3-center w3" id="home">
+      <br><br><br><br><br><br><br>
+      <h1 class="w3-jumbo" style="color:#181818"><span class="w3-hide-small">Cabify</span> Manipal</h1>
+
+      <div class="surface"></div>
+
+        <div class="car">
+          <img src="http://phpcoder.tech/html-css/car.png" alt="">
+
+      </div>
+
+      </div>
+
+
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="login">
+
+    <h1><a href="regist.php" style="color:yellow">Login here</a></h1>
+    <div id="gSignIn"></div>
+    <div class="userContent" style="display: none;"></div>
+    </div>
+    
+
+
+
+
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h4 style="color:white" One of the most common problem students face in Manipal is that during the time of arrival and departure when the semester begins/ends, many people require cabs to travel between Mangalore airport and Manipal.<br>
+Most students post cabshare requests on Whatsapp groups and never really find a partner because of their limited reach. Our website aims to fix this problem by providing students with a single platform where all cabshare requests will be posted by students, so they can reach more people and they can find someone to share a cab with.<br>
+Through our website, a user can post his cabshare request or book any existing requests from other users.</h4>
+      </div>
+
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Manipal, India</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: cabify.manipal@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
